@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Похожие фильмы</title>
+</head>
+<body>
+    <h1>Поиск по фильму</h1>
+    <form action="/similar" method="get">
+        <label for="movie_name">Введите название фильма:</label>
+        <input type="text" id="movie_name" name="movie_name" required>
+        <button type="submit">Найти</button>
+    </form>
+
+    {% if results %}
+    <h2>Результаты поиска:</h2>
+    <table>
+        <tr>
+            <th>Название</th>
+        </tr>
+        {% for movie in results %}
+        <tr>
+            <td>{{ movie.title() }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
