@@ -14,7 +14,7 @@ Build docker container:
 ```shell
 docker build -t movie_recommendation_system .
 ```
-Run docekr container:
+Run docker container:
 ```shell
 docker run -p 80:80 movie_recommendation_system
 ```
