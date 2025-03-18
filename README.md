@@ -1,6 +1,6 @@
 # Movie Recommender System
 This service helps users find interesting movies based on their preferences. The CountVectorizer algorithm from the scikit-learn library is used as the basis for recommendations. The data for model development is obtained from an extensive dataset on the [Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata). The user interface is based on the FastAPI web framework.
-## Tech
+### Tech
  * Python
  * NumPy
  * Pandas
@@ -9,7 +9,7 @@ This service helps users find interesting movies based on their preferences. The
  * Scipy
  * Scikit-learn
  * FastAPI
-## How to run
+### How to run
 Build docker container:
 ```shell
 docker build -t movie_recommendation_system .
